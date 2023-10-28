@@ -1,6 +1,10 @@
+import AboutUs from "../../components/AboutUs/AboutUs";
+import CarouselHome from "../../components/CarouselHome/CarouselHome";
+
 const Home: React.FC = () => (
     <div>
-      This is Home page!
+      <CarouselHome />
+      <AboutUs />
     </div>
   );
   
