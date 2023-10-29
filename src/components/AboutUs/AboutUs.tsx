@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div style={{ display: 'flex', paddingLeft: '40px', justifyContent: 'space-evenly', alignContent: 'center' }}>
 
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="src/assets/images/card1.png" />
+                    <Card.Img variant="top" src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
@@ -19,7 +19,7 @@ const AboutUs = () => {
                 </Card>
 
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="src/assets/images/card2.png" />
+                    <Card.Img variant="top" src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
@@ -30,7 +30,7 @@ const AboutUs = () => {
                 </Card>
 
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="src/assets/images/card3.png" />
+                    <Card.Img variant="top" src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
