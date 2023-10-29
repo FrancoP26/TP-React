@@ -1,5 +1,7 @@
 import Product from "../types/product";
 
+import { toast } from 'react-toastify';
+
 const API_BASE_URL: string = 'https://fakestoreapi.com/products';
 
 const fetchApiCall = async (method: 'GET' | 'POST' | 'PUT' | 'DELETE', id?: number, payload?: Product): Promise<any> => {
@@ -7,6 +9,20 @@ const fetchApiCall = async (method: 'GET' | 'POST' | 'PUT' | 'DELETE', id?: numb
 
   if (payload) {
     options.body = JSON.stringify(payload);
+  }
+
+  if (method === 'POST') {
+    toast.success("Producto Creado", {
+    position: "top-center",
+  });
+  } else if(method === 'PUT') {
+    toast.success("Producto Actualizado", {
+    position: "top-center",
+  });
+  } else if(method === 'DELETE') {
+    toast.success("Producto Eliminado", {
+    position: "top-center",
+  });
   }
 
   const response = await fetch(id ? `${API_BASE_URL}/${id}` : API_BASE_URL, options);

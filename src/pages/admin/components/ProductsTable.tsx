@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import * as React from 'react';
 import Spinner from 'react-bootstrap/Spinner';
 import Table from 'react-bootstrap/Table';
+import { Trash, Pencil } from 'react-bootstrap-icons';
 
 import Product from "../../../types/product";
 import DataLayer from '../../../lib/data-layer';
@@ -120,8 +121,8 @@ const ProductsTable: React.FC<ProductsTableProps> = ({ products }) => {
                         <td width='5%'>{p.price}</td>
                         <td width='5%'><img alt={p.title} src={p.image} style={{ height: 30, width: 30 }} /></td>
                         <td width='10%'>
-                          <Button onClick={() => onShowSaveModal(p)} variant="link">Edit</Button>
-                          <Button onClick={() => onShowDeleteModal(p)} variant="link">Delete</Button>
+                          <Button onClick={() => onShowSaveModal(p)} variant="link"><Pencil/></Button>
+                          <Button onClick={() => onShowDeleteModal(p)} variant="link"><Trash color='red'/></Button>
                         </td>
                       </tr>
                     ))
